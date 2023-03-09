@@ -227,5 +227,8 @@ equation
   connect(pipe5.outfl, s5.flange) annotation(
     Line(points = {{60, -150}, {80, -150}}, color = {159, 159, 223}));
   annotation(experiment(StopTime = 30),
+    Documentation(info="<html>
+This model tests the <tt>ThroughMassFlow</tt> model in connection with different componentes. If ThroughMassFlow is connected directly with a plenum no underpressure is created in the plenum. When connected to a Flow1DFV there is underpressure in the plenum
+</html>"),
     Diagram(coordinateSystem(extent = {{-100, -160}, {100, 100}})));
 end ThroughMassFlow_Test;
